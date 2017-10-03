@@ -7,11 +7,17 @@
         <script src="script.js"></script>   
 	</head>
 	<body>
-		<div id="testiElementti" class="keltainen-div">
-            <button type="button" onclick="toggleClass('testiElementti', 'keltainen-div')">Paina tästä</button>
-        </div>        
-        <div>
-            <img src="number1.jpg">
-        </div>
+        <section>
+		    <div id="testiElementti" class="keltainen-div">
+                <button type="button" onclick="toggleClass('testiElementti', 'keltainen-div')">Paina tästä</button>
+            </div>        
+            <div>
+                <img id="kuva1" width="150" src="number1.jpg">
+            </div>
+            <div>
+                <button onclick="switchImage('kuva1', 'number1.jpg')">Kuva 1</button>
+                <button onclick="switchImage('kuva1', 'number2.jpg')">Kuva 2</button>
+            </div>
+        </section>
 	</body>
 </html>
